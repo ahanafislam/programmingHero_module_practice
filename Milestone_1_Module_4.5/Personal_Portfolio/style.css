@@ -1,0 +1,181 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #23262e;
+    color: #e8e7e8;
+}
+
+h1{
+    font-size: 42px;
+    margin: 0;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.bg-1{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+.container{
+    margin: auto;
+    padding: auto;
+    width: 80%;
+}
+
+/* Navigation Manu Style */
+nav{
+    background-color: #282b33;
+    padding: 0.25% 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px 20px;
+    justify-self: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #e8e7e8;
+    font-weight: 600;
+}
+
+nav ul li:hover{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    border-image-slice: 1;
+}
+
+/* Website top banner style */
+.top-banner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    padding: 7px;
+}
+
+.about-info{
+    width: 50%;
+    padding: 0 2rem;
+    align-self: center;
+}
+
+.about-info h3{
+    font-size: 20px;
+}
+
+.about-info ul{
+    padding: 0;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.about-info ul li{
+    margin-bottom: 5px;
+}
+
+.fas{
+    margin: 5px;
+    color: #a4508b;
+}
+
+.about-info span{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.socal-link li{
+    display: inline;
+}
+
+.socal-link a{
+    color: #a4508b;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.socal-link a:hover{
+    color: #e8e7e8;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87);
+}
+
+.banner-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-img img{
+    width: 60%;
+}
+
+/* About Me section */
+.about-me{
+    display: flex;
+    margin-top: 10%;
+    padding: 10px;
+}
+.about-img{
+    width: 50%;
+    display: flex;
+}
+
+.about-img img{
+    width: 80%;
+    margin-top: 5px;
+}
+
+.about-content{
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content ul{
+    padding: 0;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.about-content ul li{
+    display: inline;
+    padding: 7px 15px;
+    font-weight: 600;
+    border: 2px solid #a4508b;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.about-content a{
+    color: #e8e7e8;
+    width: 25%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 600;
+    /* align-self: center;
+    margin-right: 30px; */
+}
