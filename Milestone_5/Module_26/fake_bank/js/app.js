@@ -39,8 +39,10 @@ document.getElementById('btn-deposit').addEventListener('click', function(event)
     
     // Get Deposit Amount from Input
     const depositAmount = getInputValue('input-deposit');
-    // View the updated value in UI
-    updateValueUI(depositAmount,'total-deposit');
+    if(depositAmount > 0) {
+        // View the updated value in UI
+        updateValueUI(depositAmount,'total-deposit');
+    }
 });
 
 // Event Listener For Withdrow
@@ -50,6 +52,8 @@ document.getElementById('btn-withdrow').addEventListener('click', function(event
 
     // Get Withdrow Amount From Input
     const withdrowAmount = getInputValue('input-withdrow');
-    // Update Value in UI
-    updateValueUI(withdrowAmount, 'total-withdrow');
+    if(withdrowAmount > 0) {
+        // Update Value in UI
+        updateValueUI(withdrowAmount, 'total-withdrow');
+    }
 });
