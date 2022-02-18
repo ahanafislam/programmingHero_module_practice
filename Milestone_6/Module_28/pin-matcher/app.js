@@ -31,5 +31,18 @@ document.getElementById('key-pad').addEventListener('click', function(event) {
 
 // Match Pin Event Listener Function
 function matchPin() {
-    console.log("I'm clicked!!");
+    const numberInputDisplay = document.getElementById('number-input-display').value;
+    const pinInputDisplay = document.getElementById('pin-input-display').value;
+    const errorUI = document.getElementById('error');
+    const successUI = document.getElementById('success');
+
+
+    if(numberInputDisplay === pinInputDisplay) {
+        successUI.style.display = 'block';
+        errorUI.style.display = 'none';
+    }
+    else {
+        errorUI.style.display = 'block';
+        successUI.style.display = 'none';
+    }
 }
