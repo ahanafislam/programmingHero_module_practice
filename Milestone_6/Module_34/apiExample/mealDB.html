@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe</title>
+    <!-- Bootstrap CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card {
+            background-color: inherit;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <header class="bg-danger p-1">
+        <h2 class="text-center">Food Recipe</h2>
+    </header>
+    <main class="container mt-3">
+        <!-- Start Search Section -->
+        <section class="w-75 mx-auto">
+            <div class="input-group mb-3">
+                <input type="text" id="search-field" class="form-control" placeholder="Search Food" aria-describedby="search-btn">
+                <button onclick="loadSearchFood()" class="btn btn-danger" type="button">Search</button>
+            </div>
+        </section>
+        <!-- End Search Section -->
+        <!-- Start error message section -->
+        <section id="error">
+            <h1 class="text-center text-danger">Search result not find</h1>
+        </section>
+        <!-- End error message section -->
+        <!-- Start Search Result Detail Section -->
+        <section id="meal-details" class="mb-4 w-75 mx-auto">
+            <!-- Meal details will show hare -->
+        </section>
+        <!-- End Search Result Detail Section -->
+        <!-- Start Result Section -->
+        <section id="result-view" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Search result will display hare -->
+        </section>
+        <!-- End Result Section -->
+    </main>
+    <!-- Bootstrap JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Local JS Link -->
+    <script src="js/mealDB.js"></script>
+</body>
+</html>
