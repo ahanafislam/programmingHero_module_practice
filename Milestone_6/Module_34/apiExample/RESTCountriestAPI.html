@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanye Quotes</title>
+    <title>List Of Countries</title>
     <!-- Bootstrap CSS CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .article-col {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="bg-dark text-white">
-    <div id="p"> 
-        <p> hahahahahahaha</p>
-    </div>
+    <header>
+        <h3 class="bg-info p-1 text-center">List of Countries</h3>
+    </header>
+    <main class="container">
+        <section id="country-detail">
+
+        </section>
+        <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            
+        </section>
+    </main>
     <!-- Bootstrap JS CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Local JS Link -->
     <!-- <script src="js/kanye_api.js"></script> -->
-    <script>
-        const p= document.getElementById("p")
-        // p.innerText = '';
-        p.innerHTML = '';
-      </script>
+    <script src="js/RESTCountriestAPI.js"></script>
 </body>
 </html>

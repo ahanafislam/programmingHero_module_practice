@@ -12,15 +12,15 @@ const displayUserList = data => {
         const article = document.createElement('article');
         article.classList.add('col');
         article.innerHTML = `
-            <div class="bg-dark border border-2 border-success rounded-3">
+            <div class="bg-dark border border-2 border-danger rounded-3">
                 <div class="card-body">
                     <img src="${user.picture.medium}" class="img-thumbnail mb-2" alt="User Profile Picture">
                     <h5 class="card-title">${user.name.title} ${user.name.first} ${user.name.last}</h5>
-                    <h6 class="card-subtitle mb-2 text-success">From ${user.location.country}</h6>
-                    <hr class="border border-success">
+                    <h6 class="card-subtitle mb-2 text-danger">From ${user.location.country}</h6>
+                    <hr class="border border-danger">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-dark">Email: ${user.email}</li>
-                        <li class="list-group-item list-group-item-dark">Phone: ${user.phone}</li>
+                        <li style="background: none;" class="list-group-item text-danger">Email: ${user.email}</li>
+                        <li style="background: none;" class="list-group-item text-danger">Phone: ${user.phone}</li>
                     </ul>
                 </div>
             </div>
