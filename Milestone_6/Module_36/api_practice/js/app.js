@@ -7,7 +7,7 @@ const showLoding = () => {
     // To stop loding
     setTimeout(() => {
         getTagName('spinner').style.display = 'none';
-    },3000);
+    },2000);
 }
 
 // Featch Api Photo
