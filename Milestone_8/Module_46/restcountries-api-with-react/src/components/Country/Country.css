@@ -1,0 +1,10 @@
+.card {
+    background-color: lavenderblush;
+    border-radius: 20px;
+    color: #333;
+    padding: 3px;
+}
+
+img{
+    width: 50%;
+}
